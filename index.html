@@ -1,0 +1,120 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <title>Is QEII dead yet? No.</title>
+
+
+  <meta property="og:site_name" content="Is QEII dead yet?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://isqueenelizabethdeadyet.com" />
+
+  <meta property="og:title" content="Is QEII dead yet?" />
+
+  <meta name="twitter:card" content="summary">
+
+  <style type="text/css">
+    html, body {height: 100%;}
+    body {text-align: center;}
+
+    a#answer {
+      display: inline-block;
+      margin-top: 200px;
+      font-weight: bold;
+      font-size: 120pt;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: black;
+    }
+
+    .flag {
+      position: absolute;
+      cursor: none;
+
+      border: 1px solid #d6d6d6;
+
+      -webkit-border-radius: 2px;
+           -o-border-radius: 2px;
+              border-radius: 2px;
+    }
+    .flag.ghost {opacity: 0.4;}
+    .flag.me {pointer-events: none;}
+
+    .click {
+      position: absolute;
+      border: 1px solid #000;
+
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+
+      -webkit-transition: 0.5s ease-out;
+         -moz-transition: 0.5s ease-out;
+           -o-transition: 0.5s ease-out;
+              transition: 0.5s ease-out;
+    }
+
+    #legend {
+      position: fixed;
+      top: 0; right: 0;
+      width: 200px;
+      padding-right: 15px; padding-top: 5px;
+      text-align: right;
+      font-size: 10pt;
+    }
+
+    /* remove display: none, and turn on setTimers(), to restore */
+    #links {
+      position: fixed;
+      top: 0; left: 0;
+      width: 300px;
+      padding-left: 15px; padding-top: 5px;
+      text-align: left;
+      font-size: 10pt;
+      z-index: 9999;
+
+      opacity: 0;
+
+      display: none;
+
+      -webkit-transition: 0.5s ease-out;
+         -moz-transition: 0.5s ease-out;
+           -o-transition: 0.5s ease-out;
+              transition: 0.5s ease-out;
+    }
+
+    #links a {
+      color: #333;
+      display: inline-block;
+      margin-right: 10px;
+    } #links a#console {display: none;}
+    /* 4 9's, needs to be clickable */
+  </style>
+
+  <script type="text/javascript" src="/js/christmas.js"></script>
+
+  <!-- IE10 JS targeting, from http://stackoverflow.com/a/17099988 -->
+  <!-- IE11 JS targeting, from http://stackoverflow.com/a/17447695 -->
+  <script type="text/javascript">
+    window._ie10 = ("onpropertychange" in document && !!window.matchMedia);
+    window._ie11 = !!navigator.userAgent.match(/Trident\/7.0; rv 11/);
+    window._ie = window._ie10 || window._ie11;
+  </script>
+</head>
+
+<body>
+  <!--
+    Initial 'title' and noscript values are server-side fallbacks,
+    calculated with UTC, for clients who do not have JS enabled.
+  -->
+  <a id="answer"
+    target="_blank">
+    <noscript>NO.</noscript>
+  </a>
+
+
+
+</body>
+</html>
